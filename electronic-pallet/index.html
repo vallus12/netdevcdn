@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>{{ t('campaign.elepallet.title') }}</title>
+	
+	<!--------------- META TAG START HERE --------------->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<!--------------- META TAG END'S HERE --------------->
+
+	<!-- FAVICON -->
+	<link href="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+
+	<!-- LOCAL STYLE -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/css/style.css">
+	<script>
+        function __RB_showTerms() {
+            document.getElementById('showPopupTerms').style.display = 'block';
+        }
+    </script>	
+</head>
+<body  class="kaxsdc address" data-event="load">
+
+	<!-- SECTION START HERE -->
+	<section>
+		<!-- TOP BAR PARAGRAPH START HERE -->
+		<div class="topbar">
+			<p>{{ t('campaign.top_disclaimer') }}</p>
+		</div>
+		<div class="topbar topbar2">
+			<p>
+				<span data-i18n="[html]lp-countdown">{{ t('campaign.elepallet.countdown') }}</span><span id="up-comming-time-2">
+				<div class="count"><div id="timer"></div></div>
+				<input type="hidden" value="" id="hiddenTime">
+			</p>
+		</div>
+		<!-- TOP BAR PARAGRAPH END'S HERE -->
+		<div class="container">
+			<div class="banner-heading">
+				<h2>
+					<span class="red">{{ t('campaign.elepallet.sale') }}</span>{{ t('campaign.elepallet.saletext') }}<span class="red">{{ t('campaign.elepallet.saleprice') }}</span>
+					<span class="green">{{ t('campaign.elepallet.saledescription') }}</span>
+				</h2>
+			</div>
+		</div>
+		<!-- PRODUCT BLOCK START HERE -->
+		<div class="product_wrapper">
+			
+			<div class="container"> <!-- CONTAINER START -->
+				<div class="product_block" id="Top">
+					<!-- LEFT SIDE BLOCK START HERE -->
+					<div class="images_wrapper">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/banner_img.png" alt="">
+					</div>
+					<!-- LEFT SIDE BLOCK START HERE -->
+
+					<!-- RIGHT SIDE BLOCK START HERE -->
+					<div class="form_wrapper">
+						<!-- FORM BLOCK START HERE -->
+						<div class="form_block">
+							<div class="form-heading">
+								<h2>{{ t('campaign.elepallet.formheading') }}</h2>
+							</div>
+							{form}
+						</div>
+						<!-- FORM BLOCK END'S HERE -->
+					</div>
+					<!-- RIGHT SIDE BLOCK END'S HERE -->
+				</div>
+			</div> <!-- CONTAINER END'S -->
+		</div>
+		<!-- PRODUCT BLOCK END'S HERE -->
+	</section>
+	<!-- SECTION END'S HERE -->
+	<!-- SLIDER START HERE -->
+	<section class="slider section-gap ">
+		<div class="container">
+			<div class="slider-heading">
+				<h2>{{ t('campaign.elepallet.sliderheading') }}</h2>
+			</div>
+			<div class="rs_self">
+				<div class="slide_block">
+					<div class="image_block active" id="img_1">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-1.png " alt="">
+					</div>
+					<div class="image_block" id="img_2">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-2.png" alt="" >
+					</div>
+					<div class="image_block" id="img_3">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-3.png" alt="" >
+					</div>
+					<div class="image_block" id="img_4">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-4.png" alt="" >
+					</div>
+					<div class="image_block" id="img_5">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-5.png" alt="">
+					</div>
+					<div class="image_block" id="img_6">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-6.png" alt="">
+					</div>
+					<div class="image_block" id="img_7">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-7.png" alt="">
+					</div>
+					<div class="image_block" id="img_8">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-8.png" alt="">
+					</div>
+				</div>
+				<div class="bottom_block">
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-1.png" alt=""  data-tab="img_1" class="active">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-2.png" alt=""  data-tab="img_2">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-3.png" alt=""  data-tab="img_3">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-4.png" alt=""  data-tab="img_4">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-5.png" alt="" data-tab="img_5">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-7.png" alt="" data-tab="img_6">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-8.png" alt="" data-tab="img_7">
+					</div>
+					<div class="image_block">
+						<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-9.png" alt="" data-tab="img_8">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- SLIDER END'S HERE -->
+	<!-- product_description SECTION START HERE -->
+	<section class="section-gap product_description">
+		<div class="container">
+			<div class="description-box">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-10.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.speedblenderheading') }}</h3>
+					<p>{{ t('campaign.elepallet.speedblendertext') }}</p>
+				</div>
+			</div>
+			<div class="description-box row-reverse">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-3.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.tefalheading') }}</h3>
+					<p>{{ t('campaign.elepallet.tefaltext') }}</p>
+				</div>
+			</div>
+			<div class="description-box">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-4.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.tefaljuiceheading') }}</h3>
+					<p>{{ t('campaign.elepallet.tefaljuicetext') }}</p>
+				</div>
+			</div>
+			<div class="description-box row-reverse">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-5.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.cameraheading') }}</h3>
+					<p>{{ t('campaign.elepallet.cameratext') }}</p>
+				</div>
+			</div>
+			<div class="description-box">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-6.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.Fryerheading') }}</h3>
+					<p>{{ t('campaign.elepallet.Fryertext') }}</p>
+				</div>
+			</div>
+			<div class="description-box row-reverse">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-7.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.Cleanerheading') }}</h3>
+					<p>{{ t('campaign.elepallet.Cleanertext') }}</p>
+				</div>
+			</div>
+			<div class="description-box">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-8.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.iPhoneheading') }}</h3>
+					<p>{{ t('campaign.elepallet.iPhonetext') }}</p>
+				</div>
+			</div>
+			<div class="description-box row-reverse">
+				<div class="img_block">
+					<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/images/slide-9.png" alt="">
+				</div>
+				<div class="content">
+					<h3>{{ t('campaign.elepallet.Ingenioheading') }}</h3>
+					<p>{{ t('campaign.elepallet.Ingeniotext') }}</p>
+				</div>
+			</div>
+			<a href="#Top" class="get-it-now">Get It Now</a>
+		</div>
+	</section>
+	<!-- product_description SECTION END'S HERE -->
+
+	<footer>
+		<div class="container">
+			<p>{{ t('campaign.disclaimer') }}</p>
+		</div>
+	</footer>
+
+	<script>
+		'use strict';
+		function Tabs() {
+			var bindAll = function() {
+			var menuElements = document.querySelectorAll('[data-tab]');
+			for(var i = 0; i < menuElements.length ; i++) {
+				menuElements[i].addEventListener('click', change, false);
+			}
+		}
+		var clear = function() {
+			var menuElements = document.querySelectorAll('[data-tab]');
+			for(var i = 0; i < menuElements.length ; i++) {
+				menuElements[i].classList.remove('active');
+				var id = menuElements[i].getAttribute('data-tab');
+				document.getElementById(id).classList.remove('active');
+			}
+		}
+		var change = function(e) {
+			clear();
+			e.target.classList.add('active');
+			var id = e.currentTarget.getAttribute('data-tab');
+			document.getElementById(id).classList.add('active');
+		}
+		bindAll();
+		}
+		var connectTabs = new Tabs();
+
+		function myFunction() {
+			var x = document.getElementById("select");
+			x.classList.add("active");
+		}
+		/* COUNT DOWN JS START HERE */	
+		window.onload = isTimeSet();	
+		function isTimeSet(){
+			//this function checks if there is a time set
+			if(localStorage.getItem("time") != null){
+				var time = localStorage.getItem("time");
+				document.getElementById("hiddenTime").value = time;
+			}else{
+				document.getElementById("hiddenTime").value = "1800";
+			}
+		}
+		var sec     = document.getElementById("hiddenTime").value,
+		countDiv    = document.getElementById("timer"),
+		secpass,
+		countDown   = setInterval(function () {
+				'use strict';				
+				secpass();
+		}, 1000);
+
+		function secpass() {
+			'use strict';			
+			var min     = Math.floor(sec / 60),remSec  = sec % 60;		
+			if (remSec < 10) {				
+				remSec = '0' + remSec;			
+			}
+			if (min < 10) {				
+				min = '0' + min;			
+			}
+			countDiv.innerHTML = min + ":" + remSec;			
+			if (sec > 0) {				
+				sec = sec - 1;
+				localStorage.setItem("time",sec);
+			} else {				
+				clearInterval(countDown);				
+				countDiv.innerHTML = 'Limit over';
+				localStorage.removeItem("time");				
+			}
+		}
+		/* COUNT DOWN JS END'S HREE */ 
+	</script>
+</body>
+</html>

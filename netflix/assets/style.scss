@@ -1,0 +1,990 @@
+$Montserrat : 'Montserrat', sans-serif;
+
+$black : #000;
+$white : #fff;
+$theme : #DC1A1B;
+$border : #dbdfe2;
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  font-display: swap;
+  -webkit-appearance: none;
+  font-family: $Montserrat;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $Montserrat; 
+  font-display: swap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #F9F9F9;;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}  
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+    -webkit-text-fill-color: #292929 !important;
+    border: 1px solid #292929 !important;
+}
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus, 
+select:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+    -webkit-text-fill-color: #292929 !important;
+    border: 1px solid #292929 !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+section{    
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container{
+    max-width: 1280px;
+    padding:0 15px;
+    margin: 0 auto;
+    @media screen and (max-width:1380px){
+        max-width: 1080px;
+    }
+    @media screen and (max-width:1080px){
+        max-width: 950px;
+    }
+}
+/* SECTION CSS START HERE */
+
+/* BOOTSTRAP CSS START HERE */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-12, .col-md-12, .col-xs-12, .col-sm-12,.col-lg-12,.col-xl-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@media (min-width: 768px){
+    .col-6, .col-md-6, .col-xs-6, .col-sm-6 ,.col-lg-6,.col-xl-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* BOOTSTRAP CSS END'S HERE */
+
+/* TOPBAR CSS START HERE */
+.topbar{
+    position: relative;
+    background: #292929 ;
+    p{
+        color: #FFF;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 15px 0;
+        text-align: center;    
+        @media screen and (max-width:991px){
+            font-size: 11px;
+        }
+    }
+    &.topbar2 {
+        background-color: #f2f2f2;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            color: #666;
+            font-weight: 400;
+            @media screen and (max-width:580px){
+                font-size: 14px;
+            }
+        }
+        .count {
+            margin-left: 6px;
+           div{
+            padding: 0px;
+            background: transparent;
+            position: relative;
+            text-align: center;
+            color: #333;
+            font-family: $Montserrat;
+            font-size: 16px;
+            line-height: 25px;
+            min-width: 54px;
+            min-height: 25px;
+            @media screen and (max-width:580px){
+                font-size: 14px;
+            }
+           }
+        }
+    }    
+}
+/* TOPBAR CSS END'S HERE */
+
+/* PRODUCT BLOCK CSS START HERE */
+.product_wrapper{
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/banner_bg.png') no-repeat center;
+    background-size: cover;
+    @media screen and (max-width:1380px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width:991px) {
+        padding: 30px 0;
+    }
+    .product_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width:991px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .images_wrapper{
+            width: 100%;
+            font-size: 0;
+            padding-left: 90px;
+            position: relative;
+            @media screen and (max-width:991px) {
+                padding: 0;
+            }
+            h1{
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 61px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media screen and (max-width:1380px) {
+                    font-size: 37px;
+                    line-height: 55px;
+                }
+                @media screen and (max-width:991px) {
+                    font-size: 22px;
+                    line-height: 37px;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+                text-transform: capitalize;
+                color: rgba(255, 255, 255, 0.7);
+                padding-top: 15px;
+            }
+            .price_block {
+                position: relative;
+                margin-top: 60px;
+                z-index: 5;
+                font-size: 40px;
+                margin: 60px auto 0 auto;
+                background: #fff;
+                width: 210px;
+                height: 210px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                animation: bounce 5s  infinite;
+                box-shadow: 0px 100px 78px rgba(0, 0, 0, 0.06), 0px 64.8148px 45.6806px rgba(0, 0, 0, 0.0455556), 0px 38.5185px 24.8444px rgba(0, 0, 0, 0.0364444), 0px 20px 12.675px rgba(0, 0, 0, 0.03), 0px 8.14815px 6.35556px rgba(0, 0, 0, 0.0235556), 0px 1.85185px 3.06944px rgba(0, 0, 0, 0.0144444);
+                span{
+                    font-size: 27px;
+                    line-height: 33px;
+                }
+                h2{
+                    font-size: 40px;
+                    line-height: 49px;
+                    font-weight: 800;
+                    font-family: $Montserrat;
+                }
+                &:after{
+                    width: calc(100% - 15px);
+                    height: calc(100% - 15px);
+                    content: "";
+                    position: absolute;
+                    border: 2px solid $black;
+                    border-radius: 100%;
+                }
+                @media screen and (max-width:991px) {
+                    width: 125px;
+                    height: 125px;
+                    span{
+                        font-size: 15px;
+                    }
+                    h2{
+                        font-size: 18px;
+                    }
+                }
+                @keyframes bounce{
+                    0%, 20%, 50%, 80%, 100% {
+                        transform: translateY(0%);
+                    }
+                    40% {
+                        transform: translateY(-20%);
+                    }
+                    
+                    60% {
+                        transform: translateY(-10%);
+                    }
+                }
+                &.second{
+                    span{
+                        color: #DC1A1B;
+                        font-weight: bold;
+                    }
+                    h2{
+                        color: #DC1A1B;
+                    }
+                    &:after{
+                        border: 3px solid #DC1A1B;
+                    }
+                }
+
+            }
+        }
+        .form_wrapper{
+            width: 100%;
+            max-width: 630px;
+            padding: 60px 0;
+            .form_block{
+                width: 100%;
+                margin: 0 auto;
+                background: rgba(98, 97, 97, 0.72);
+                backdrop-filter: blur(23px);  
+                padding: 40px 40px 70px 40px;
+                @media screen and (max-width:1380px) {
+                    padding: 30px;
+                }
+                @media screen and (max-width:575px) {
+                    padding: 25px; 
+                }
+                .title{
+                    text-align: center;
+                    padding-bottom: 20px;
+                    label{
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 37px;
+                        color: #FFFFFF;
+                        @media screen and (max-width:1380px) {
+                            font-size: 20px;
+                        }
+                        @media screen and (max-width:1080px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .form-group{
+                    margin-bottom: 20px;
+                    @media screen and (max-width:1380px) {
+                        margin-bottom: 21px;
+                    }
+                    label{
+                        font-size: 0;
+                        display: none;
+                    }                    
+                    input,textarea,select{
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.3);
+                        border: 1px solid rgba(255, 255, 255, 0.24);
+                        border-radius: 4px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #fff;
+                        font-family:$Montserrat;
+                        font-weight: 100;
+                        padding: 15px 20px;
+                        outline: none;
+                        &::placeholder{
+                            color: rgba(255, 255, 255, 0.46);
+                        }
+                        &:focus{
+                            background: rgba(0, 0, 0, 0.34);
+                            border: 1px solid #FFFFFF;
+                            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);                   
+                        }
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                        &[type=number] {
+                            -moz-appearance: textfield;
+                        }
+                        @media screen and (max-width:1380px) {
+                            padding: 9px 15px;
+                            line-height: 20px;
+                            font-size: 16px;
+                        }
+                        @media screen and (max-width:575px){
+                            font-size: 16px;
+                            padding: 10px 15px;
+                        }
+                    }
+                    ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+                        font-family:$Montserrat;color: rgba(255, 255, 255, 0.46);
+                    }
+                    select{
+                        background-image: url('https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/dropdown.svg');
+                        background-repeat: no-repeat;
+                        background-position: right 20px center;
+                        color: rgba(255, 255, 255, 0.46);      
+                        cursor: pointer;
+                        &:focus{
+                            border: 1px solid #c2c2c2;                    
+                        }
+                        &.active{
+                            color: #FFF;
+                        }
+                    }
+                    .form-check{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        .form-check-input {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                            background: rgba(255, 255, 255, 0.29);
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -webkit-print-color-adjust: exact;
+                            cursor: pointer;
+                            padding: 0;
+                            border-radius: 4px;
+                            @media screen and (max-width:575px){
+                                width: 30px;
+                            }
+                            &:focus{
+                                border:1px solid #707070;                    
+                            }
+                            &:checked[type=checkbox] {
+                                background: url('https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/right.svg') no-repeat;
+                            }
+                        }
+                        label{
+                            font-size: 16px;
+                            color: rgba(255, 255, 255, 0.55);
+                            line-height:20px;
+                            display: inline-block;
+                            cursor: pointer;
+                            a{
+                                appearance: none;
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            @media screen and (max-width:1380px) {
+                                font-size: 15px;
+                            }
+                            @media screen and (max-width:575px){
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                .btn,button,input[type="submit"]{
+                    background-color: #fff;
+                    box-shadow: 0px 13px 40px rgba(0, 0, 0, 0.13);
+                    width: 100%;
+                    height: 53px;
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 20px;         
+                    color: #272727;
+                    padding-bottom: 0;
+                    transition: background 0.5s ease;
+                    @media screen and (max-width:1380px) {
+                        font-size: 16px;
+                        height:40px;
+                        padding-bottom: 2px;
+                    }
+                    &:hover{
+                        background: #858584;
+                        transition: background 0.5s ease;
+                    }
+                    &.sub{
+                        background: #DC1A1B;
+                        border: 1.5px solid #FFB7B7;
+                        color: #fff;
+                        &:hover{
+                            background: #292929;
+                            transition: background 0.5s ease;
+                            border: 1.5px solid #FFF;
+                        }
+                    }
+                }
+                &.second{
+                    background: rgba(107, 107, 107, 0.65);
+                    border-radius: 10px;
+                    backdrop-filter: none; 
+                        .title{
+                            padding-bottom: 15px;
+                            margin-bottom: 35px;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                width: 160px;
+                                height: 3px;
+                                background: url(https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/form_border.svg) no-repeat;
+                                bottom: 0;
+                                left: 50%;
+                                right: auto;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    .form-group{
+                        input,textarea,select{
+                            background: #FFFFFF;
+                            border: 1px solid #505050;
+                            box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.11);
+                            border-radius: 4px;
+                            color: #292929;
+                            &::placeholder{
+                                color: rgba(41, 41, 41, 0.42);
+                            }
+                            &:focus{
+                                border: 1px solid #292929;
+                                color: #292929;
+                            }
+                        }
+                        select{
+                            background-image: url('https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/dropdown.svg');
+                            background-repeat: no-repeat;
+                            background-position: right 20px center;
+                            cursor: pointer;
+                            color: rgba(41, 41, 41, 0.42);
+                            &.active{
+                                color: #292929;
+                            }
+                        }
+                        .form-check-input{
+                            background: rgba(0, 0, 0, 0.09);
+                            border: 1px solid rgba(255, 255, 255, 0.7);
+                            &:focus{
+                                background: rgba(0, 0, 0, 0.09);                   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* PRODUCT BLOCK CSS END'S HERE */
+
+/* FEATURE BLOCK CSS START HERE */
+.feature_wrapper{
+    position: relative;
+    padding: 130px 0 300px 0;
+    @media screen and (max-width:1380px) {
+        padding: 130px 0;
+    }
+    @media screen and (max-width:1080px) {
+        padding: 40px 0;
+    }
+    .title{
+        text-align: center;
+        @media screen and (max-width:1380px) {
+            margin-bottom: 80px;
+        }
+        @media screen and (max-width:1080px) {
+            margin-bottom: 40px;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 49px;
+            text-transform: uppercase;
+            color: #292929;
+            margin-bottom: 60px;
+            position: relative;
+            @media screen and (max-width:1080px) {
+                font-size: 28px;
+                line-height: 35px;
+            }
+            span{
+                color:#DC1A1B;
+            }
+        }
+    }
+    .feature_block{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width:1080px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .border{
+            position: relative;
+            transition: all 0.5s ease;
+            margin: 10px;
+            @media screen and (min-width:1081px) {
+                margin: 0;
+            }
+            @media screen and (max-width:767px) {
+                margin: 0 auto;
+            }
+            &::before{
+                background: #292929;
+                position: absolute;
+                content: none;
+                width: 40%;
+                height: 40%;
+                right: -1px;
+                top: -1px;
+                z-index: -1;
+                border-radius: 25px;
+                @media screen and (max-width:767px) {
+                    top: 9px;
+                }
+            }
+            &::after{
+                background: #292929;
+                position: absolute;
+                content: none;
+                width: 40%;
+                height: 40%;
+                right: -1px;
+                bottom:-1px;
+                z-index: -1;
+                border-radius: 25px;
+                @media screen and (max-width:767px) {
+                    bottom: 9px;
+                }
+            }
+            &:hover{
+                &::before{
+                    content: '';
+                }
+                &::after{
+                    content: '';
+                }
+            }
+        }
+        .feature_wrap{
+            background: #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 47px 60px rgba(0, 0, 0, 0.07), 0px 18.1037px 19.1111px rgba(0, 0, 0, 0.0425185), 0px 3.82963px 4.88889px rgba(0, 0, 0, 0.0274815);
+            border-radius: 19px;
+            padding: 50px 55px 40px 55px;
+            max-width: 296px;
+            width: 100%;
+            position: relative;
+            transition: all 0.5s ease;
+            &:hover{
+                &::before{
+                    content: '';
+                }
+                &::after{
+                    content: '';
+                }
+            }
+            &::before{
+                background: #292929;
+                position: absolute;
+                content: none;
+                width: 40%;
+                height: 40%;
+                left: -1px;
+                top: -1px;
+                z-index: -1;
+                border-radius: 25px;
+                transition: all 0.5s ease;
+            }
+            &::after{
+                background: #292929;
+                position: absolute;
+                content: none;
+                width: 40%;
+                height: 40%;
+                left: -1px;
+                bottom:-1px;
+                z-index: -1;
+                border-radius: 25px;
+                transition: all 0.5s ease;
+            }
+            @media (min-width:1081px) and (max-width:1380px) {
+                padding: 50px 52px 40px 52px;
+                max-width: 245px;
+            }
+            @media screen and (max-width:767px) {
+                margin: 10px auto;
+            }
+            img{
+                text-align: center;
+            }
+            h4{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+                color: #292929;
+                padding-top: 20px;
+                @media (min-width:1081px) and (max-width:1380px) {
+                    font-size: 19px;
+                }
+                @media screen and (max-width:767px) {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+    &.second{
+        padding: 100px 0 300px 0;
+        background: url(https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/feature_bg.png) no-repeat;
+        background-position: center left;
+        @media (min-width:1600px) {
+            background-size: 380px 605px;
+        }
+        @media screen and (max-width:1380px) {
+            padding: 100px 0;
+        }
+        @media screen and (max-width:1080px) {
+            padding: 40px 0;
+            background: none;
+        }
+        .title{
+            h2{
+                margin-bottom: 80px;
+                padding-bottom: 10px;
+                @media screen and (max-width:1080px) {
+                    margin-bottom: 40px;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 160px;
+                    height: 3px;
+                    background: url(https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/border-title.svg) no-repeat;
+                    bottom: 0;
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .border{
+            &::before{
+                background: $theme;
+            }
+            &::after{
+                background: $theme;
+            }
+        }
+        .feature_wrap{
+            &:hover{
+                box-shadow: 0px 47px 60px rgba(220, 26, 27, 0.07), 0px 18.1037px 19.1111px rgba(220, 26, 27, 0.0425185), 0px 3.82963px 4.88889px rgba(220, 26, 27, 0.0274815);
+            }
+            &::before{
+                background: $theme;
+            }
+            &::after{
+                background: $theme;
+            }
+        }
+    }
+}
+/* FEATURE BLOCK CSS END'S HERE */
+
+/* PRICE BLOCK CSS END'S HERE */
+.price_wrapper{
+    background: url('https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/price_bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 1100px;
+    position: relative;
+    margin: 150px 0 0 0;
+    @media screen and (max-width:1080px) {
+        height: 350px;
+        margin: 0;
+    }
+    @media screen and (max-width:580px) {
+        height: auto;
+        padding: 120px 0;
+        margin: 0;
+    }
+    .top_img{
+        position: relative;
+        top: -288px;
+        @media screen and (max-width:1380px) {
+            top: -155px;
+            width: 660px;
+            margin: 0 auto;
+            display: block;
+        }
+        @media screen and (max-width:1080px) {
+            display: none;
+        }
+    }
+    .title{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        @media screen and (max-width:1380px) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media screen and (max-width:767px) {
+            width: 100%;
+            padding: 0 15px;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 55px;
+            line-height: 67px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            @media screen and (max-width:1080px) {
+                font-size: 25px;
+                line-height: 40px;
+            }
+            @media screen and (max-width:767px) {
+                font-size: 17px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.7);
+            padding-top: 25px;
+            @media screen and (max-width:767px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &.second{
+        h2{
+            padding-bottom: 20px;
+            position: relative;
+            @media screen and (max-width:767px) {
+                padding-bottom: 5px;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 160px;
+                height: 3px;
+                background: url(https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/border-title.svg) no-repeat;
+                bottom: 0;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+            }
+            span{
+                color: $theme;
+            }
+        }
+    }
+}
+/* PRICE BLOCK CSS END'S HERE */
+
+/* IMAGE_SLIDE BLOCK CSS END'S HERE */
+.image_slide_wrapper{
+    position: relative;
+    top: -200px;
+    @media screen and (max-width:1080px) {
+       top: 0;
+       padding: 50px 0;
+    }
+    .img_wrapper{
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:1080px) {
+            flex-wrap: wrap;
+        }
+        .thumb{
+            transition: all 0.5s ease;
+            margin: 10px;
+            @media (min-width:1081px) and (max-width:1380px) {
+                width: 250px;
+            }
+            &:hover{
+                cursor: pointer;
+                -webkit-transform:scale(1.25); /* Safari and Chrome */
+                -moz-transform:scale(1.25); /* Firefox */
+                -ms-transform:scale(1.25); /* IE 9 */
+                -o-transform:scale(1.25); /* Opera */
+                transform:scale(1.06);
+                box-shadow: 0px 47px 60px rgba(220, 26, 27, 0.15), 0px 18.1037px 19.1111px rgba(220, 26, 27, 0.07), 0px 3.82963px 4.88889px rgba(220, 26, 27, 0.0274815);
+            }
+        }
+    }
+}
+/* IMAGE_SLIDE BLOCK CSS END'S HERE */
+
+/* WATCH BLOCK CSS END'S HERE */
+.watch_wrapper{
+    position: relative;
+    padding: 0px 0 100px 0;
+    @media screen and (max-width:1080px) {
+        padding: 0px 0 2px 0;
+    }
+    .watch_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:1080px) {
+            flex-direction: column;
+        }
+        .left_block{
+            flex: 0 0 44%;
+        }
+        .right_block{
+            flex: 0 0 51%;
+            .title{
+                @media screen and (max-width:767px) {
+                    padding-top: 30px;
+                }
+                h2{
+                    font-weight: 800;
+                    font-size: 27px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: #292929;
+                    @media screen and (max-width:1080px) {
+                        text-align: center;
+                    }
+                    @media screen and (max-width:767px) {
+                        font-size: 26px;
+                        line-height: 45px;
+                    }
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 30px;
+                    text-transform: capitalize;
+                    color: #292929;
+                    padding-top: 25px;
+                    @media screen and (max-width:1080px) {
+                        text-align: center;
+                    }
+                    @media screen and (max-width:767px) {
+                        font-size: 20px;
+                        line-height: 37px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom_img{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &.second{
+        background: url(https://cdn.jsdelivr.net/gh/NetHir-De/netflix/images/watch_bg.png) no-repeat;
+        background-position: center right;
+        background-size: 330px 600px;
+        @media screen and (max-width:1080px) {
+            background: none;
+        }
+        h2{
+            span{
+                color: $theme;
+            }
+        }
+    }
+}
+/* WATCH BLOCK CSS END'S HERE */
+
+/* SECTION CSS END'S HERE */
+
+/* FOOTER CSS START HERE */
+footer{
+    padding: 25px 0;
+    text-align: center;
+    @media screen and (max-width:1380px) {
+        padding: 25px 0;
+    }
+    p{
+        font-size: 14px;
+        line-height: 22px;
+        color: #292929;
+        @media screen and (max-width:1380px) {
+            font-size: 12px;
+        }
+    }
+    h4{
+        font-size: 14px;
+        line-height: 22px;
+        color: #292929;
+        text-align: center;
+        margin-top: 5px;
+        @media screen and (max-width:1380px) {
+            font-size: 12px;
+        }
+    }
+}
+/* FOOTER CSS END'S HERE */ 

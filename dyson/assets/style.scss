@@ -1,0 +1,1059 @@
+$Futura-Regular : 'Futura LT';
+$Futura : 'Futura LT';
+
+$black : #000;
+$white : #fff;
+
+$border : #dbdfe2;
+
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  font-display: swap;
+  -webkit-appearance: none;
+  font-family: $Futura-Regular;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $Futura-Regular;
+  font-display: swap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+section{    
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+
+
+/* FONTS CSS START HERE */
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url("https://cdn.jsdelivr.net/gh/NetHir-De/dyson/fonts/FuturaLT-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/NetHir-De/dyson/fonts/FuturaLT-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Futura LT';
+    src: url("https://cdn.jsdelivr.net/gh/NetHir-De/dyson/fonts/FuturaLT.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/NetHir-De/dyson/fonts/FuturaLT.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+h2{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    @media screen and  (min-width:320px) and (max-width:767px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    @media screen and (min-width:992px) and (max-width:1140px) {
+        font-size: 30px !important;
+        line-height: 38px !important;
+    }
+    @media screen and (max-width:991px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    @media screen and (max-width:575px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+p{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 32px;
+    padding-top: 10px;
+    @media screen and (max-width:991px) {
+        font-size: 22px;
+        line-height: 28px;
+        padding-top: 20px;
+    }
+    @media screen and  (max-width:575px) {
+        font-size: 16px;
+        line-height: 26px;
+        padding-top: 10px;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #000000;
+}
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus, 
+select:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #000000;
+}
+
+
+/* FONTS CSS END'S HERE */
+
+.container{
+    max-width: 1280px;
+    padding:0 15px;
+    margin: 0 auto;
+    @media screen and (max-width:1380px){
+        max-width: 1280px;
+    }
+    @media screen and (max-width:1080px){
+        max-width: 1140px;
+    }
+}
+
+/* SECTION CSS START HERE */
+
+/* BOOTSTRAP CSS START HERE */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-12, .col-md-12, .col-xs-12, .col-sm-12,.col-lg-12,.col-xl-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@media (min-width: 768px){
+    .col-6, .col-md-6, .col-xs-6, .col-sm-6 ,.col-lg-6,.col-xl-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.p-0{
+    padding: 0 !important;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
+.pt-0{
+    padding-top: 0 !important;
+}
+.justify-content-end{
+    justify-content: end !important;
+}
+/* BOOTSTRAP CSS END'S HERE */
+
+/* TOPBAR CSS START HERE */
+.topbar{
+    left: 0;
+    margin: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.99);
+    border-bottom: 1px solid #e4e4e4;
+    p{
+        color: #c5c5c5;
+        font-size: 11px;
+        vertical-align: baseline;
+        margin-bottom: 0;
+        line-height: 1em;
+        margin-left: 0;
+        padding: 5px 0;
+        text-align: center;    
+        font-family: $Futura-Regular;
+        @media screen and (max-width:991px){
+            font-size: 11px;
+        }
+    }
+    &.topbar2 {
+        background-color: #f2f2f2;
+        border-bottom: none;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // p {
+        //     font-size: 17px;
+        //     font-weight: 300;
+        //     line-height: 22px;
+        //     color: #666;
+        //     font-weight: 400;
+        // }
+        .count {
+            margin-left: 6px;
+           div{
+            padding: 0px;
+            background: transparent;
+            position: relative;
+            text-align: center;
+            color: #333;
+            font-family: $Futura-Regular;
+            font-size: calc(1.1em + 0.15vw);
+            min-width: 54px;
+            min-height: 25px;
+           }
+        }
+    }    
+}
+/* TOPBAR CSS END'S HERE */
+
+/* PRODUCT BLOCK CSS START HERE */
+.product_wrapper{
+    margin: 0;
+    padding: 75px 0;
+    background-image: url(https://dyson-netizens.netlify.app/images/background.png);
+    background-size: cover;
+    @media screen and (max-width:1380px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width:991px) {
+        padding: 0 0 50px 0;
+    }
+    .product_block{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:991px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .images_wrapper{
+            width: 100%;
+            max-width: calc(100% - 760px);
+            font-size: 0;
+            padding-right: 50px;
+            position: relative;
+            padding-top: 130px;
+            @media screen and (max-width:1380px) {
+                padding-top:84px;
+            }
+            .img-tab {
+                display: none;
+            }
+            .img-tab.active {
+                display: block;
+                width: 100%;
+                height: 100%;
+                img{
+                    max-width: 385px;
+                    max-height: 685px;
+                    left: 30%;
+                    position: relative;
+                    @media screen and (max-width:991px) {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+            @media screen and (max-width:1380px) {
+                max-width: calc(100% - 50%);
+            }
+            @media screen and (max-width:1080px){
+                // margin: 70px 0 0;
+            }
+            @media screen and (max-width:991px) {
+                max-width: 50%;
+                margin: 0 auto 30px;
+                padding: 0;
+            }
+            @media screen and (max-width:767px) {
+                max-width: 65%;
+            }
+            @media screen and (max-width:575px) {
+                max-width: 70%;
+            }
+            .price_block {
+                position: absolute;
+                z-index: 5;
+                font-size: 40px;
+                background: linear-gradient(82.92deg, #8F55D8 4.51%, #D39FFF 93.42%);
+                transform: rotate(96.56deg);
+                width: 170px;
+                height: 170px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                animation: bounce 2s ease infinite;
+                box-shadow: 0px 10px 19.8px 0.2px rgba(127, 127, 127, 0.2);
+                position: absolute;
+                right: 50%;
+                top: 50%;
+                color: $white;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background: #a972e7;
+                    height: 20px;
+                    width: 20px;
+                    bottom: 0px;
+                    right: -10px;
+                    border-radius: 50%;
+                    @media screen and (max-width:767px) {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+                span{
+                    font-size: 20px;
+                }
+                h2{
+                    font-size: 24px;
+                    font-family: $Futura;
+                }
+                @media screen and (max-width:1480px) {
+                    right: 50%;
+                }
+                @media screen and (max-width:1380px) {
+                    width: 120px;
+                    height: 120px;
+                    span{
+                        font-size: 18px;
+                    }
+                    // h2{
+                    //     font-size: 22px;
+                    // }
+                    &:after{
+                        width: calc(100% - 8px);
+                        height: calc(100% - 8px);
+                    }
+                }
+                @media screen and (max-width:991px) {
+                    left: 60%;
+                    top: 70%;
+                }
+                @media screen and (max-width:575px) {
+                    width: 90px;
+                    height: 90px;
+                    right: 50%;
+                    span{
+                        font-size: 16px;
+                    }
+                    // h2{
+                    //     font-size: 18px;
+                    // }
+                }
+                @keyframes bounce{
+                    0%, 20%, 50%, 80%, 100% {
+                        transform: translateY(-50%);
+                    }
+                    40% {
+                        transform: translateY(-40%);
+                    }
+                    
+                    60% {
+                        transform: translateY(-30%);
+                    }
+                }
+            }
+        }
+        .form_wrapper{
+            width: 100%;
+            max-width: 610px;
+            .form_block{
+                width: 100%;
+                margin: 0 auto;
+                background: rgba(255, 255, 255, 0.15);
+                padding: 35px;
+                @media screen and (max-width:1380px) {
+                    padding: 30px;
+                }
+                @media screen and (max-width:575px) {
+                    padding: 25px; 
+                }
+                $colors: (
+                    black: #383733,
+                    golden: #ffeed7,
+                    blue: #bcdaf6,
+                    green: #f1f2ed,                     
+                );                
+                input[type="radio"] {
+                    display: none;
+                }
+                .btn-group{
+                    font-size: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 0px 38px;
+                    @media screen and (max-width:1380px) {
+                        padding: 18px 0px 22px;
+                    }
+                    @media screen and (max-width:575px) {
+                        padding: 25px 0; 
+                    }
+                    a {
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        border-radius: 100%;
+                        position: relative;
+                        box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+                        @media screen and (max-width:1380px) {
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 20px;
+                        }
+                        @each $name, $value in $colors {
+                            &.#{$name} {
+                                background: $value;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 48px;
+                            height: 48px;
+                            border: 1px solid #000;
+                            border-radius: 100%;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%) scale(0);
+                            position: absolute;
+                            @media screen and (max-width:1380px) {
+                                width: 36px;
+                                height: 36px;
+                            }
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        &.active{
+                            &:after {
+                                transform: translate(-50%,-50%) scale(1);
+                            }
+                        }
+                    }
+                }
+                .title{
+                    text-align: left;
+                    margin-bottom: 20px;
+                    @media screen and (max-width:1080px) {
+                        text-align: center;
+                    }
+                    label{
+                        font-size: 20px;
+                        color: $white;
+                        line-height: 1.2;
+                        font-weight: bold;
+                        @media screen and (max-width:1380px) {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+                        @media screen and (max-width:1080px) {
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                    }
+                    &.choose_color{
+                        margin-top: 20px;
+                        label{
+                            font-size: 18px;
+                            @media screen and (max-width:1380px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .form-group{
+                    margin-bottom: 15px;
+                    @media screen and (max-width:1380px) {
+                        margin-bottom: 21px;
+                    }
+                    label{
+                        font-size: 0;
+                        display: none;
+                    }                    
+                    input,textarea,select{
+                        width: 100%;
+                        background: transparent;
+                        border: 0;
+                        border: 1px solid #c2c2c2;
+                        font-size: 18px;
+                        color: $black;
+                        font-family:$Futura-Regular;
+                        font-weight: 100;
+                        padding: 10px 20px;
+                        background: #fff;
+                        outline: none;
+                        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                        &:focus{
+                            border: 1px solid #000000;                    
+                        }
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                        &[type=number] {
+                            -moz-appearance: textfield;
+                        }
+                        @media screen and (max-width:1380px) {
+                            padding: 9px 15px;
+                            line-height: 20px;
+                            font-size: 16px;
+                        }
+                        @media screen and (max-width:575px){
+                            font-size: 16px;
+                            padding: 10px 15px;
+                        }
+                    }
+                    ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+                        font-family:$Futura-Regular;color: #888888;
+                    }
+                    select{
+                        background-image:url(https://dyson-netizens.netlify.app/images/dropdown.png);
+                        background-repeat: no-repeat;
+                        background-position: right 20px center;
+                        color: #888888;          
+                        cursor: pointer;
+                        &:focus{
+                            border: 1px solid #c2c2c2;                    
+                        }
+                        &.active{
+                            color: #05060a;
+                        }
+                    }
+                    .form-check{
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 10px;
+                            vertical-align: top;
+                            background-color: #fff;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            border: 1px solid #707070;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -webkit-print-color-adjust: exact;
+                            color-adjust: exact;
+                            cursor: pointer;
+                            padding: 0;
+                            @media screen and (max-width:420px) {
+                                width: 25px;
+                                height: 20px;
+                            }
+                            &:focus{
+                                border:1px solid #707070;                    
+                            }
+                            &:checked[type=checkbox] {
+                                background-image: url(https://dyson-netizens.netlify.app/images/right.svg);
+                                background-color: #707070;
+                            }
+                        }
+                        label{
+                            font-size: 18px;
+                            color: #FFF;
+                            line-height: 1.2;
+                            display: inline-block;
+                            cursor: pointer;
+                            @media screen and (max-width:1380px) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .btn,button,input[type="submit"]{
+                    background-color: rgb(5, 6, 10);
+                    width: 100%;
+                    height: 59px;
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 20px;
+                    line-height: 1.35;         
+                    color: $white;
+                    padding-bottom: 0;
+                    transition: background 0.5s ease;
+                    @media screen and (max-width:1380px) {
+                        font-size: 16px;
+                        height:40px;
+                        padding-bottom: 2px;
+                    }
+                    &:hover{
+                        background: #707070;
+                        transition: background 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+    .product_title{
+        text-align: center;
+        margin-bottom: 14px;
+        @media screen and (max-width:991px) {
+            margin-bottom: 30px;
+        }
+        label{
+            font-size: 30px;
+            color: $white;
+            line-height: 41px;   
+            display: block;         
+            margin-bottom: 25px;
+            @media screen and (max-width:1380px){
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            @media screen and (max-width:1080px) {
+                font-size: 18px;
+            } 
+            @media screen and (max-width:767px) {
+                line-height: 24px;
+            } 
+        }
+        h1{
+            font-size: 50px;
+            font-family: $Futura;
+            color: $white;
+            font-weight: bold;
+            line-height: 1.2;    
+            margin-bottom: 10px;
+            @media screen and (max-width:1380PX){
+                font-size: 34px;
+            }      
+            @media screen and (max-width:1080px) {
+                font-size: 26px;
+            }
+            @media screen and (max-width:991px) {
+                font-size: 32px;
+            }      
+        }
+    }
+    &.campaign_two{
+        .product_block{
+            @media screen and (max-width:991px) {
+                flex-direction: column-reverse;
+            }
+            .images_wrapper{
+                @media screen and (max-width:991px) {
+                   margin-top: 30px;
+                }
+                .product_title{
+                    display: none;
+                    @media screen and (max-width:991px) {
+                       display: block;
+                    }
+                }
+            }
+            .form_wrapper{
+                .product_title{
+                    display: block;
+                    @media screen and (max-width:991px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/* PRODUCT BLOCK CSS END'S HERE */
+/* HYGINE BLOCK CSS STARTS HERE */
+.hygine_block{
+    margin: 0;
+    padding: 0 0 60px 0;
+    position: relative;
+    font-size: 0;
+    @media screen and (max-width:991px) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+    img{
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        max-height: 870px;
+    }
+    .text-1{
+        position: absolute;
+        text-align: center;
+        justify-content: left;
+        @media screen and (max-width:991px) {
+            position: relative;
+            text-align: center;
+        }
+        @media screen and (min-width:992px) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .col-4{
+            flex: 0.33.33;
+            width: 33.33%;
+        }
+        .col-6{
+            @media screen and (min-width:320px) {
+                flex: 0 0 100%;
+                min-width: 100%;
+            }
+            .left{
+                h2{
+                    @media screen and (min-width:992px) and (max-width:1140px) {
+                        font-size: 30px !important;
+                        line-height: 38px !important;
+                    }
+                }
+                p{
+                    max-width: 550px;
+                }
+            }
+        }
+    }
+}
+/* HYGINE BLOCK CSS END'S HERE */
+
+/* CLEANING BLOCK CSS STARTS HERE */
+.cleaning_block{
+    margin: 0;
+    position: relative;
+    padding: 75px 0;
+    font-size: 0;
+    @media screen and (max-width:1380px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width:991px) {
+        padding: 50px 0;
+    }
+    @media screen and (max-width:991px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    img{
+        position: relative;
+        max-height: 870px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .col-6{
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        @media screen and (max-width:991px) {
+            position: relative;
+            top: 0;
+            transform: none;
+            text-align: center;
+            flex: 0 0 100%;
+            min-width: 100%;
+        }
+        .left{
+            h2{
+                @media screen and (max-width:991px) {
+                    max-width: 800px;
+                }
+            }
+            
+            p{
+                font-weight: normal;
+                max-width: 550px;
+            }
+        }
+    }
+}
+/* CLEANING BLOCK CSS END'S HERE */
+
+/* LAST BLOCK CSS STARTS HERE */
+
+    .machine_wrapper{
+        font-size: 0;
+        img{
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+/* LAST BLOCK END'S STARTS HERE */
+
+/* FOOTER CSS START HERE */
+footer{
+    background: #242424;
+    padding: 55px 0;
+    text-align: center;
+    @media screen and (max-width:1380px) {
+        padding: 25px 0;
+    }
+    p{
+        font-size: 18px;
+        font-family: $Futura-Regular;
+        line-height: 25px;
+        color: $white;
+        @media screen and (max-width:1380px) {
+            font-size: 14px;
+        }
+    }
+    h4{
+        font-size: 20px;
+        font-family: $Futura;
+        line-height: 25px;
+        color: $white;
+        text-align: center;
+        margin-top: 15px;
+        letter-spacing: 0.475em;
+        @media screen and (max-width:1380px) {
+            font-size: 14px;
+        }
+    }
+}
+/* FOOTER CSS END'S HERE */ 
+
+/* FEATURE CSS START HERE */
+.feature_wrapper {
+	position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F0F0F0 100%);
+	&::before {
+		content: '';
+		position: absolute;
+		background: url(https://dyson-netizens.netlify.app/images/banner-img.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		transform: scale(-1);
+	}
+    h2 {
+        text-align: center;
+    }
+    span{
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        font-size: 26px;
+        @media screen and (max-width:767px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+        }
+	.feature_block {
+		display: flex;
+		padding: 40px 0;
+		justify-content: center;
+		align-items: center;
+        @media screen and (max-width:991px) {
+        display: block;
+        text-align: center;
+        }
+		.left_block {
+			flex: 30%;            
+                @media (max-width:767px) {
+                    flex: 100%;
+                }
+			.img_block {
+                @media (max-width:767px) {
+                    max-width: 500px;
+					margin: 0 auto 30px;
+                }
+				img {
+					width: 100%;
+				}
+			}
+            .left-block{
+                img{
+                    max-height: 500px;
+                    @media screen and (max-width:767px) {
+                        max-width: 320px;
+                        max-height: 400px;
+                    }
+                }
+            }
+		}
+		.right_block {
+			flex: 70%;
+            @media (max-width:767px) {
+                flex: 100%;
+            }
+			.contant_block {
+				.single_feature {
+					display: flex;
+					justify-content: left;
+					align-items: center;
+					padding: 20px 0;
+                    @media (max-width:1199px) {
+                        display: block;
+						text-align: center;
+                    }
+					.img_block {
+						margin-right: 20px;
+                        @media (max-width:1199px) {
+                            margin-right: 0;
+                        }
+					}
+					.right_block_txt {
+						h6 {
+							color: $black;
+							font-weight: bold;
+                            font-size: 25px;
+                            line-height: 39px;
+                            @media (max-width:1199px) {
+                                font-size: 22px;
+                            }   
+						}
+                        p {
+                            font-size: 15px;
+                        }
+					}
+				}
+			}
+		}
+	}
+    &.key_feature{
+        .img_block{
+            position: relative;
+            h3{
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                color: white;
+                @media (min-width: 480px) and (max-width:767px){
+                font-size: 18px;
+                }
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .feature_block{
+            .right_block{
+                .contant_block{
+                    .row{
+                        flex: 100%;
+                        @media (max-width: 991px){
+                            justify-content: center;
+                        }
+                        .key-feature-image{
+                            position: relative;
+                            width: 100%;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            @media (min-width: 768px){
+                                flex: 0 0 40%;
+                                max-width: 40%;
+                            }
+                            @media (min-width: 480px) and (max-width:767px){
+                                flex: 0 0 40%;
+                                max-width: 40%;
+                            }
+
+                        }
+                        .ml-30{
+                            margin-left: 30px;
+                            @media screen and (max-width:991px){
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .left_block{
+                .left-block{
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.feature_block_wrapper{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    font-size: 0;
+    @media screen and (max-width:767px) {
+        font-size: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    > div{
+        width: 100%;
+        position: relative;
+        @media screen and (max-width:767px) {
+            max-width: 363px;
+            max-height: 400px;
+            width: 50%;
+            max-width: 50%;
+        }
+        img{
+            width: 100%;
+            position: relative;
+        }
+        h3{
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            font-size: 25px;
+            color: white;
+            @media screen and (max-width:991px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width:767px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+/* FEATURE CSS END HERE */

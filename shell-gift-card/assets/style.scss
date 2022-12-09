@@ -1,0 +1,940 @@
+$FuturaLT-Regular : 'FuturaLT-Regular';
+$Satoshi-Regular : 'Satoshi-Regular';
+$FuturaLT-Bold : 'FuturaLT-Bold';
+$black : #000;
+$white : #fff;
+$border : #dbdfe2;
+$theme : #C91B1D;
+$theme-yellow : #F6D330;
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  font-display: swap;
+  -webkit-appearance: none;
+  font-family: $Satoshi-Regular;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $Satoshi-Regular;
+  font-display: swap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+section{    
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* FONTS CSS START HERE */
+@font-face {
+    font-family: 'FuturaLT-Bold';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT-Bold.ttf) format('ttf');
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT-Bold.woff) format('woff'),
+         url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'FuturaLT-Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT.ttf) format('ttf');
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT.woff) format('woff'),
+         url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/FuturaLT.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Satoshi-Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/Satoshi-Regular.ttf) format('ttf');
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/Satoshi-Regular.eot) format('eot');
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/Satoshi-Regular.woff) format('woff'),
+         url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/fonts/Satoshi-Regular.woff2) format('woff2');
+}
+/* FONTS CSS END'S HERE */
+
+.container{
+    max-width: 1350px;
+    padding:0 15px;
+    margin: 0 auto;
+    @media screen and (max-width:1399px){
+        max-width: 1080px;
+    }
+    @media screen and (max-width:1080px){
+        max-width: 950px;
+    }
+}
+/* SECTION CSS START HERE */
+
+/* BOOTSTRAP CSS START HERE */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.col-12, .col-md-12, .col-xs-12, .col-sm-12,.col-lg-12,.col-xl-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@media (min-width: 768px){
+    .col-6, .col-md-6, .col-xs-6, .col-sm-6 ,.col-lg-6,.col-xl-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: $theme;
+}
+/* BOOTSTRAP CSS END'S HERE */
+.title{
+    h2{
+        font-family: $FuturaLT-Bold;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: $theme;
+        @media screen and (max-width:1080px) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        @media screen and (max-width:991px) {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        @media screen and (max-width:575px) {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        span{
+            color: $theme-yellow;
+            font-family: $FuturaLT-Bold;
+        }
+    }
+    &.light{
+        h2{
+            color: $white;
+        }
+    }
+    &.center{
+        text-align: center;
+    }
+}
+
+/* TOPBAR CSS START HERE */
+.topbar{
+    left: 0;
+    margin: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.99);
+    // background: $theme;
+    border-bottom: 1px solid #e4e4e4;
+    p{
+        color: #c5c5c5;
+        font-size: 11px;
+        vertical-align: baseline;
+        margin-bottom: 0;
+        line-height: 1em;
+        margin-left: 0;
+        padding: 5px 0;
+        text-align: center;    
+        font-family: $Satoshi-Regular;
+        @media screen and (max-width:991px){
+            font-size: 11px;
+        }
+    }
+    &.topbar2 {
+        background-color: #f2f2f2;
+        border-bottom: none;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 22px;
+            color: #666;
+            font-weight: 400;
+        }
+        .count {
+            margin-left: 6px;
+           div{
+            padding: 0px;
+            background: transparent;
+            position: relative;
+            text-align: center;
+            color: #333;
+            font-family: $Satoshi-Regular;
+            font-size: calc(1.1em + 0.15vw);
+            min-width: 54px;
+            min-height: 25px;
+           }
+        }
+    }    
+}
+/* TOPBAR CSS END'S HERE */
+
+.mb100{    
+    margin-bottom: 100px;
+    @media screen and (max-width:1399px) {
+        margin-bottom: 80px;
+    }
+    @media screen and (max-width:991px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width:575px) {
+        margin-bottom: 40px;
+    }
+}
+
+/* PRODUCT BLOCK CSS START HERE */
+.product_wrapper{
+    .product_block{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:991px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content_wrapper{
+            width: 100%;
+            margin-right: 24px;
+            position: relative;
+            @media screen and (max-width:991px) {
+                max-width: 460px;
+                margin: 0 auto 30px;
+            }
+            .text_wrapper{
+                max-width: 580px;
+                text-align: center;
+                .title{
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    h2{
+                        font-family: $FuturaLT-Regular;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 28px;
+                        letter-spacing: 0.45em;
+                        text-transform: uppercase;
+                        color: $black;
+                        @media screen and (max-width:991px) {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                    h1{
+                        font-family: $FuturaLT-Bold;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 50px;
+                        text-transform: uppercase;
+                        color: $theme;
+                        border-top: 1px solid $theme-yellow;
+                        padding-top: 8px;
+                        margin-top: 5px;
+                        @media screen and (max-width:991px) {
+                            font-size: 26px;
+                            line-height: 42px;
+                        }
+                    }
+                }
+                img{
+                    display: inline-block;
+                    line-height: 0;
+                    @media screen and (max-width:1399px) {
+                        width: 100%;
+                        max-width: 480px;
+                    }
+                }
+            }
+            .price_block {
+                position: absolute;
+                z-index: 5;
+                font-size: 40px;
+                background: $theme-yellow;
+                width: 154px;
+                height: 154px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                animation: bounce 2s ease infinite;
+                box-shadow: 0px 39px 36px -29px rgba(204, 34, 41, 0.37);
+                position: absolute;
+                right: 20px;
+                border: 8px solid rgba(204, 34, 41, 0.13);;
+                top: 60%;
+                span{
+                    font-family: $Satoshi-Regular;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.06em;
+                    color: $theme;
+                    display: block;
+                    margin-bottom: 2px;
+                }
+                h2{
+                    font-family: $FuturaLT-Bold;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 37px;
+                    color: $theme;
+                }
+                @media screen and (max-width:1399px) {
+                    width: 120px;
+                    height: 120px;
+                    right: 0px;
+                    top: 70%;
+                    span{
+                        font-size: 18px;
+                    }
+                    h2{
+                        font-size: 22px;
+                    }
+                }
+                @media screen and (max-width:991px) {
+                    // right: -50px;
+                }
+                @media screen and (max-width:575px) {
+                    width: 90px;
+                    height: 90px;
+                    // right: -35px;
+                    span{
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    h2{
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+                @keyframes bounce{
+                    0%, 20%, 50%, 80%, 100% {
+                        transform: translateY(-50%);
+                    }
+                    40% {
+                        transform: translateY(-40%);
+                    }
+                    
+                    60% {
+                        transform: translateY(-30%);
+                    }
+                }
+            }
+        }
+        .form_wrapper{
+            width: 100%;
+            @media screen and (max-width:991px) {
+                max-width: 620px;
+            }
+            .form_block{
+                width: 100%;
+                margin: 0 auto;
+                background: $theme-yellow;
+                border-radius: 15px;  
+                padding: 46px;
+                @media screen and (max-width:1399px) {
+                    padding: 30px;
+                }
+                @media screen and (max-width:575px) {
+                    padding: 25px; 
+                }
+                // $colors: (
+                //     price25: #383733,
+                //     price50: #ffeed7,
+                //     price75: #bcdaf6,
+                //     price100: #f1f2ed,                     
+                // );                
+                input[type="radio"] {
+                    display: none;
+                }
+                .btn-group{
+                    font-size: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0px 0px 30px;
+                    @media screen and (max-width:1399px) {
+                        // padding: 0px 0px 30px;
+                    }
+                    @media screen and (max-width:575px) {
+                        padding: 0 0 20px; 
+                    }
+                    a {
+                        display: block;
+                        width: 75px;
+                        height: 44px;
+                        margin-right: 18px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        position: relative;
+                        text-decoration: none;
+                        border: 1px solid transparent;
+                        background: rgba(0, 0, 0, 0.09);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: rgba(0, 0, 0, 0.25);
+                        font-family: $FuturaLT-Bold;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        @media screen and (max-width:1399px) {
+                            width: 60px;
+                            height: 35px;
+                            margin-right: 10px;
+                        }
+                        // @each $name, $value in $colors {
+                        //     &.#{$name} {
+                        //         background: $value;
+                        //     }
+                        // }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        &.active{
+                            border-color: $theme;
+                            background: $white;
+                            color: $theme;
+                        }
+                    }
+                }
+                .title{
+                    text-align: center;
+                    margin-bottom: 0;
+                    h2{
+                        font-family: $FuturaLT-Bold;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 35px;
+                        color: $theme;
+                        padding-bottom: 16px;
+                        margin-bottom: 30px;
+                        position: relative;
+                        text-transform: capitalize;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            bottom: 0;
+                            top: auto;
+                            width: 100%;
+                            height: 1px;
+                            background: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/images/border.svg) no-repeat center;
+                        }
+                    }
+                    label{
+                        font-size: 22px;
+                        color: rgb(27, 27, 27);
+                        line-height: 1.2;
+                        @media screen and (max-width:1399px) {
+                            font-size: 20px;
+                        }
+                        @media screen and (max-width:1080px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .form-group{
+                    margin-bottom: 24px;
+                    @media screen and (max-width:1399px) {
+                        margin-bottom: 20px;
+                    }
+                    label{
+                        font-size: 0;
+                        display: none;
+                    }                    
+                    input,textarea,select{
+                        width: 100%;
+                        background: transparent;
+                        border: 0;
+                        border: 1px solid $white;
+                        font-size: 16px;
+                        color: $black;
+                        font-family: $Satoshi-Regular;
+                        font-weight: 100;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        background: $white;
+                        outline: none;
+                        &:focus{
+                            border: 1px solid $black;                    
+                        }
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                        &[type=number] {
+                            -moz-appearance: textfield;
+                        }
+                        @media screen and (max-width:1399px) {
+                            padding: 9px 15px;
+                            line-height: 20px;
+                            font-size: 16px;
+                        }
+                        @media screen and (max-width:575px){
+                            font-size: 16px;
+                            padding: 10px 15px;
+                        }
+                    }
+                    ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+                        font-family:$Satoshi-Regular;
+                        color: rgba(0, 0, 0, 0.50);
+                    }
+                    select{
+                        background-image:url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/images/dropdown.png);
+                        background-repeat: no-repeat;
+                        background-position: right 20px center;
+                        color: #888888;          
+                        cursor: pointer;
+                        &:focus{
+                            border: 1px solid #c2c2c2;                    
+                        }
+                        &.active{
+                            color: #05060a;
+                        }
+                    }
+                    .form-check{
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 10px;
+                            vertical-align: top;
+                            background-color: #fff;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            border: 1px solid #707070;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -webkit-print-color-adjust: exact;
+                            color-adjust: exact;
+                            cursor: pointer;
+                            padding: 0;
+                            border-radius: 5px;
+                            &:focus{
+                                border:1px solid #707070;                    
+                            }
+                            &:checked[type=checkbox] {
+                                background-image: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev/shell-gift-card/assets/images/right.svg);
+                                background-color: #707070;
+                            }
+                        }
+                        label{
+                            font-size: 18px;
+                            color: rgb(57, 57, 57);
+                            line-height: 1.2;
+                            display: inline-block;
+                            cursor: pointer;
+                            @media screen and (max-width:1399px) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .btn,button,input[type="submit"]{
+                    border-radius: 10px;
+                    background-color:$theme;
+                    width: 100%;
+                    height: 59px;
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 20px;
+                    line-height: 1.35;         
+                    color: $white;
+                    padding-bottom: 0;
+                    transition: background 0.5s ease;
+                    font-family: $FuturaLT-Bold;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    @media screen and (max-width:1399px) {
+                        font-size: 16px;
+                        height:40px;
+                        padding-bottom: 2px;
+                    }
+                    &:hover{
+                        background: $black;
+                        transition: background 0.5s ease;
+                    }
+                }
+                .form-Footer{
+                    p{
+                        font-family: $FuturaLT-Regular;
+                        text-align: center;
+                        font-size: 16px;
+                        padding-top: 22px;
+                        color: rgba(0, 0, 0, 0.55);
+                        span{
+                            cursor: pointer;
+                            color: $theme;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product_title{
+        text-align: center;
+        margin-bottom: 14px;
+        @media screen and (max-width:991px) {
+            margin-bottom: 30px;
+        }
+        label{
+            font-size: 28px;
+            color: $black;
+            line-height: 1.2;   
+            display: block;         
+            margin-bottom: 10px;
+            @media screen and (max-width:1399px){
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            @media screen and (max-width:1080px) {
+                font-size: 18px;
+            } 
+        }
+        h1{
+            font-size: 39px;
+            font-family: $FuturaLT-Bold;
+            color: $black;
+            font-weight: bold;
+            line-height: 1.2;    
+            @media screen and (max-width:1399PX){
+                font-size: 34px;
+            }      
+            @media screen and (max-width:1080px) {
+                font-size: 26px;
+            }
+            @media screen and (max-width:991px) {
+                font-size: 32px;
+            }      
+        }
+    }
+}
+/* PRODUCT BLOCK CSS END'S HERE */
+
+/* SHELL GIFT CARD BLOCK CSS START HERE */
+.card_wrapper{
+    background: $theme;
+    padding-top: 80px;
+    position: relative;
+    @media screen and (max-width:991px) {
+        padding-top: 60px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 76px;
+        width: 100%;
+        background: $white;
+    }
+    .gift_block{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        margin-top: 40px;
+        @media screen and (max-width:767px) {
+            display: block;
+            max-width: 440px;
+            margin: 30px auto 0;
+        }
+        div{
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 0;
+            margin-right: 24px;
+            @media screen and (max-width:767px) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            &:last-child{
+                margin: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                transition: 0.5s ease;
+            }
+            h2{
+                position: absolute;
+                bottom: 0;
+                font-family: $FuturaLT-Bold;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 45px;
+                text-transform: capitalize;
+                color: $white;
+                z-index: 2;
+                padding: 30px 36px;
+                @media screen and (max-width:1399px) {
+                    font-size: 24px;
+                }
+                @media screen and (max-width:991px) {
+                    font-size: 18px;
+                    padding: 14px 20px;
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: auto;
+                bottom: 0;
+                height: 8px;
+                width: 100%;
+                background: $theme-yellow;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1) rotate(3deg);
+                }
+            }
+        }
+    }
+}
+/* SHELL GIFT CARD BLOCK CSS END'S HERE */
+
+/* ABOUT BLOCK CSS START HERE */
+.about_wrapper{
+    .about_block{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width:767px) {
+            display: block;
+            max-width: 440px;
+            margin: 30px auto 0;
+            text-align: center;
+        }
+        h2{
+            margin-bottom: 14px;
+        }
+        p{
+            font-family: $Satoshi-Regular;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black;
+            margin-bottom: 30px;
+            @media screen and (max-width:991px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        a{
+            font-family: $FuturaLT-Regular;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 36px;
+            background: $theme;
+            color: $white;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            transition: background 0.5s ease;
+            &:hover{
+                background: $black;
+            }
+        }
+        > div{
+            width: 100%;    
+        }
+        .content_wrapper{
+            padding-right: 65px;
+            margin-right: 65px;
+            @media screen and (max-width:1399px) {
+                padding-right: 0;
+            }
+            @media screen and (max-width:767px) {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .images_wrapper{
+            @media screen and (max-width:767px) {
+                margin-top: 30px;
+            }
+            img{                
+                @media screen and (max-width:1399px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* ABOUT BLOCK CSS END'S HERE */
+
+/* BENEFITS BLOCK CSS START HERE */
+.benefits_wrapper{
+    .title{
+        margin-bottom: 40px;
+        @media screen and (max-width:575px) {
+            margin-bottom: 20px;
+        }
+    }
+    .benefits_block{
+        display: flex;
+        @media screen and (max-width:991px) {
+            flex-wrap: wrap;
+            margin-bottom: -20px;
+            max-width: 540px;
+            margin: auto;
+        }
+        @media screen and (max-width:575px) {
+           max-width: 440px;
+        }
+        div{
+            background: $theme-yellow;
+            padding: 24px;
+            color: $black;
+            border-radius: 8px;
+            margin-right: 24px;
+            box-shadow: 0px 34px 26px -21px rgba(0, 0, 0, 0.11);
+            width: 100%;
+            @media screen and (max-width:1399px) {
+                padding: 20px;
+            }
+            @media screen and (max-width:991px) {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                max-width: calc(50% - 10px);
+                &:nth-child(even){
+                    margin-right: 0;
+                }
+            }
+            @media screen and (max-width:575px) {
+               max-width: 100%;
+               margin-right: 0;
+               text-align: center;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                margin-bottom: 28px;
+                @media screen and (max-width:1399px) {
+                    margin-bottom: 15px;
+                }
+            }
+            p{
+                font-family: $Satoshi-Regular;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: $black;
+                @media screen and (max-width:1399px) {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+/* BENEFITS BLOCK CSS END'S HERE */
+/* SECTION CSS END'S HERE */
+
+/* FOOTER CSS START HERE */
+footer{
+    background: $theme;
+    padding: 20px 0 14px;
+    text-align: center;
+    @media screen and (max-width:1399px) {
+        padding: 25px 0;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white;
+        @media screen and (max-width:1399px) {
+            font-size: 14px;
+        }
+    }
+    h4{
+        font-size: 20px;
+        line-height: 25px;
+        color: $theme-yellow;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.475em;
+        font-family: $FuturaLT-Bold;
+        margin-top: 15px;
+        @media screen and (max-width:1399px) {
+            font-size: 14px;
+        }
+    }
+}
+/* FOOTER CSS END'S HERE */ 

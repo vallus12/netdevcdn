@@ -1,0 +1,265 @@
+$SFP-Regular : 'SF-Pro-Display-Regular';
+$SFP-Bold : 'SF-Pro-Display-Bold';
+
+$white : #fff;
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  font-display: swap;
+  -webkit-appearance: none;
+  font-family: $SFP-Regular;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $SFP-Regular;
+  font-display: swap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+section{    
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FONTS CSS START HERE */
+@font-face {
+    font-family: 'SF-Pro-Display-Bold';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/thankyou/assets/fonts/SF-Pro-Display-Bold.woff2) format('woff2');
+  }
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/thankyou/assets/fonts/SF-Pro-Display-Regular.woff2) format('woff2');
+}
+/* FONTS CSS END'S HERE */
+
+.container{
+    max-width: 1190px;
+    padding:0 15px;
+    margin: 0 auto;
+    width: 100%;
+    @media screen and (max-width:1399px){
+        max-width: 991px;
+    }
+}
+/* SECTION CSS START HERE */
+
+/* BOOTSTRAP CSS START HERE */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.col-12, .col-md-12, .col-xs-12, .col-sm-12,.col-lg-12,.col-xl-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media (min-width: 768px){
+    .col-md-6, .col-xs-6, .col-sm-6 ,.col-lg-6,.col-xl-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* BOOTSTRAP CSS END'S HERE */
+
+.onboarding{
+    text-align: center;
+}
+.onboarding h2 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #0f1958;
+    @media(max-width: 767px){
+        font-size: 26px;
+    }
+}
+
+.onboarding h6 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    @media(max-width: 767px){
+        font-size: 20px;
+    }
+}
+
+.check-spinner__worm-a,
+.check-spinner__worm-b {
+    visibility: hidden;
+}
+.check-spinner {
+    margin: 50px 0;
+    overflow: visible;
+    width: 200px;
+    height: 200px;
+}
+@media (max-width: 767px) {
+    .check-spinner {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media (max-width: 575px) {
+    .check-spinner {
+        width: 150px;
+        height: 150px;
+        margin: 30px 0;
+    }
+}
+.check-spinner__worm-a {
+    -webkit-animation: worm-a 1s linear;
+    animation: worm-a 1s linear;
+}
+.check-spinner__worm-b {
+    -webkit-animation: worm-b 1s 1s linear forwards;
+    animation: worm-b 1s 1s linear forwards;
+    stroke-dashoffset: 0.01;
+}
+.check-spinner__circle {
+    -webkit-animation: circle 1.5s 2s cubic-bezier(0, 0, 0.42, 1.33) forwards;
+    animation: circle 1.5s 2s cubic-bezier(0, 0, 0.42, 1.33) forwards;
+}
+@-webkit-keyframes worm-a {
+    from {
+        stroke-dashoffset: 36.1;
+        visibility: visible;
+    }
+    to {
+        stroke-dashoffset: -252.9;
+        visibility: visible;
+    }
+}
+@keyframes worm-a {
+    from {
+        stroke-dashoffset: 36.1;
+        visibility: visible;
+    }
+    to {
+        stroke-dashoffset: -252.9;
+        visibility: visible;
+    }
+}
+@-webkit-keyframes worm-b {
+    from {
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        stroke-dasharray: 0 0 72.2 341.3;
+        visibility: visible;
+    }
+    50% {
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        stroke-dasharray: 0 207 45 341.3;
+        visibility: visible;
+    }
+    to {
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        stroke-dasharray: 0 297 45 341.3;
+        visibility: visible;
+    }
+}
+@keyframes worm-b {
+    from {
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        stroke-dasharray: 0 0 72.2 341.3;
+        visibility: visible;
+    }
+    50% {
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        stroke-dasharray: 0 207 45 341.3;
+        visibility: visible;
+    }
+    to {
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        stroke-dasharray: 0 297 45 341.3;
+        visibility: visible;
+    }
+}
+@-webkit-keyframes circle {
+    from {
+        r: 0;
+    }
+    to {
+        r: 50px;
+    }
+}
+@keyframes circle {
+    from {
+        r: 0;
+    }
+    to {
+        r: 50px;
+    }
+}
+@-webkit-keyframes reappear {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@keyframes reappear {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}

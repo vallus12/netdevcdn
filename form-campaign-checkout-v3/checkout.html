@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--------------- Meta tags start --------------->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name=theme-color content="#F24947" />   
+	<meta name="referrer" content="origin">
+	<!--------------- Meta tags end --------------->
+	<!-- Page title -->
+	<title>Checkout</title>
+	<!-- CSS Links -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/form-campaign-checkout-v3/assets-V2/css/app.css" />
+</head>
+<body class="home-page">
+	<!-- MultiStep Form -->
+	<main class="main-wrapper">	
+		<section>
+			<div class="checkout-content checkout">
+				<div class="container">
+					<div class="bottom">
+						<div class="account-content">
+							<div class="form-title">Payment</div>
+							<form method="POST" class="form-group">
+								<div class="form-row">
+									<div class="form-group col-12">
+										<input type="text" class="form-control"
+											placeholder="Carn number" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<select class="form-control form-select form-select-sm minimal" aria-label=".form-select-sm example">
+											<option selected>Select Month</option>
+											<option value='Janaury'>Janaury</option>
+											<option value='February'>February</option>
+											<option value='March'>March</option>
+											<option value='April'>April</option>
+											<option value='May'>May</option>
+											<option value='June'>June</option>
+											<option value='July'>July</option>
+											<option value='August'>August</option>
+											<option value='September'>September</option>
+											<option value='October'>October</option>
+											<option value='November'>November</option>
+											<option value='December'>December</option>
+										</select>
+									</div>
+									<div class="form-group col">
+										<select class="form-control form-select form-select-sm minimal" aria-label=".form-select-sm example">
+											<option selected>Select Year</option>
+											<option value="2022">2022</option>
+											<option value="2023">2023</option>
+											<option value="2024">2024</option>
+											<option value="2025">2025</option>
+											<option value="2026">2026</option>
+											<option value="2027">2027</option>
+											<option value="2028">2028</option>
+											<option value="2029">2029</option>
+											<option value="2030">2030</option>
+											<option value="2031">2031</option>
+											<option value="2032">2032</option>
+											<option value="2033">2033</option>
+											<option value="2034">2034</option>
+											<option value="2035">2035</option>
+											<option value="2036">2036</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<input type="text" name="cvv" class="form-control" placeholder="Enter CVV" required="">
+									</div>
+									<div class="form-group col cvv">
+										<img width="70" src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/form-campaign-checkout-v3/assets-V2/images/cvv.svg" alt="Icon">
+									</div>
+								</div>
+								<!-- <button class="next action-button">Pay Now</button> -->
+								<a href="thankyou.html" class="next action-button" id="submitButton">Pay Now</a>
+							</form>
+							<div class="visa">
+								<img src="https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/form-campaign-checkout-v3/assets-V2/images/payments.svg" alt="Icon">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
