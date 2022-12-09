@@ -53,8 +53,8 @@ section{
 /* FONTS CSS START HERE */
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/fonts/Inter-Regular.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/fonts/Inter-Regular.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/electronic-pallet/assets/fonts/Inter-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/electronic-pallet/assets/fonts/Inter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -62,8 +62,8 @@ section{
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/fonts/Inter-Medium.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/electronic-pallet/assets/fonts/Inter-Medium.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/electronic-pallet/assets/fonts/Inter-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/electronic-pallet/assets/fonts/Inter-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -345,7 +345,7 @@ section{
                         cursor: pointer;
                         border-radius: 100%;
                         position: relative;
-                        box-shadow: inset 0px 1px 2px 0px rgb(0 0 0 / 40%);
+                        box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0 / 40%);
                         @media screen and (max-width:1399px) {
                             width: 25px;
                             height: 25px;

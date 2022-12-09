@@ -53,13 +53,13 @@ img {
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/fonts/SF-Pro-Display-Bold.woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/fonts/SF-Pro-Display-Bold.woff2) format('woff2');
   }
 @font-face {
     font-family: 'SF-Pro-Display-Regular';
     font-style: normal;
     font-display: swap;
-    src: url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/fonts/SF-Pro-Display-Regular.woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/fonts/SF-Pro-Display-Regular.woff2) format('woff2');
 }
 /* FONTS CSS END'S HERE */
 .container {
@@ -174,7 +174,7 @@ section {overflow: hidden;}
     max-width: 1920px;
     margin: 0 auto;
     background: #fff;
-    background-image: url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/images/banner.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/images/banner.svg);
     background-size: auto;
     background-position: right;
     background-repeat: no-repeat;
@@ -525,7 +525,7 @@ section {overflow: hidden;}
                             color: #888888;
                         }
                         select{
-                            background-image:url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/images/dropdown.png);
+                            background-image:url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/images/dropdown.png);
                             background-repeat: no-repeat;
                             background-position: right 20px center;
                             color: #888888;          
@@ -566,7 +566,7 @@ section {overflow: hidden;}
                                     border: 1px solid rgba(47, 47, 47, 0.5) !important;                    
                                 }
                                 &:checked[type=checkbox] {
-                                    background-image: url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/images/right.svg);
+                                    background-image: url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/images/right.svg);
                                     background-color: #fff;
                                     border: 1px solid rgba(47, 47, 47, 0.5);
                                 }
@@ -873,7 +873,7 @@ section {overflow: hidden;}
                         position: absolute;
                         width: 300px;
                         height: 2px;
-                        background: url(https://cdn.jsdelivr.net/gh/NetHir-De/xbox/images/br-line.svg);
+                        background: url(https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/xbox/images/br-line.svg);
                         background-size: cover;
                         background-position: center;
                         bottom: -10px;

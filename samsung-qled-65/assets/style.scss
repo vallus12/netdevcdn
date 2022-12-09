@@ -161,8 +161,8 @@ section {
 
 @font-face {
     font-family: 'Samsung Sharp Sans';
-    src: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungSharpSans-Bold.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungSharpSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -170,8 +170,8 @@ section {
 
 @font-face {
     font-family: 'SamsungOne 400';
-    src: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungOne-400.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungOne-400.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungOne-400.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungOne-400.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -179,8 +179,8 @@ section {
 
 @font-face {
     font-family: 'SamsungOne 700';
-    src: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungOne-700.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@master/samsung-qled-65/assets-v2/fonts/SamsungOne-700.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungOne-700.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/samsung-qled-65/assets-v2/fonts/SamsungOne-700.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -701,7 +701,7 @@ label.error {
                         cursor: pointer;
                         border-radius: 100%;
                         position: relative;
-                        box-shadow: inset 0px 1px 2px 0px rgb(0 0 0 / 40%);
+                        box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0 / 40%);
 
                         @media screen and (max-width:1399px) {
                             width: 25px;

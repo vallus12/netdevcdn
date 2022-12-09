@@ -1,0 +1,1442 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  font-display: swap;
+  -webkit-appearance: none;
+  font-family: "GeneralSans-Variable",sans-serif;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+body {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "GeneralSans-Variable",sans-serif;
+	font-display: swap;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background: #fff;
+	max-width: 1920px;
+	  margin: auto;
+  }
+  
+  html {
+	scroll-behavior: smooth;
+  }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+label,h1,h5{
+    letter-spacing: 1px;
+}
+
+/* FONTS CSS START HERE */
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/cocacola-minifridge/assets-v5/fonts/GeneralSans-Variable.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/cocacola-minifridge/assets-v5/fonts/GeneralSans-Variable.woff') format('woff');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/cocacola-minifridge/assets-v5/fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/vallus12/netdevcdn@latest/cocacola-minifridge/assets-v5/fonts/Satoshi-Variable.woff') format('woff');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+/* FONTS CSS END'S HERE */
+
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+	max-width: 1320px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.w1900 {
+  max-width: 1920px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-f {
+  position: fixed;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.w100 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* SECTION CSS START HERE */
+/* BOOTSTRAP CSS START HERE */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+  
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+.col-12, .col-md-12, .col-xs-12, .col-sm-12, .col-lg-12, .col-xl-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+  
+@media (min-width: 575px) {
+    .col-6, .col-md-6, .col-xs-6, .col-lg-6, .col-xl-6 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    .col-sm-6{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+}
+
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.8) !important;
+    
+}
+/* BOOTSTRAP CSS END'S HERE */
+/* TOPBAR CSS START HERE */
+/* .topbar{
+    background: #000;
+} */
+.topbar p{
+	color: #c5c5c5;
+    font-size: 11px;
+    vertical-align: baseline;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    font-family: "Satoshi-Variable",sans-serif;
+    max-width: 1320px;
+}
+.topbar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(254, 0, 26, 0.06);
+}
+.topbar2 p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #FE001A;
+    font-weight: 400;
+    padding: 22px 0;
+}
+
+.topbar2 .count {
+    margin-left: 6px;
+}
+.topbar2 .count div {
+    padding: 0px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    color: #FE001A;
+    font-family: "Satoshi-Variable",sans-serif;
+    font-size: calc(1.1em + 0.15vw);
+    min-width: 54px;
+    min-height: 25px;
+}
+/* TOPBAR CSS START HERE */
+
+/* BANNER CSS START HERE */
+.banner_wrapper{
+  	background: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/cocacola-minifridge/assets-v5/images/banner-wave.png), radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+	/* background-image: url(../images/banner-wave.png); */
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.banner_wrapper .product_wrapper{
+  	padding: 74px 0 60px;
+}
+.banner_wrapper .product_wrapper .product_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper{
+    max-width: 648px;
+    width: 100%;
+    margin-left: 100px;
+}
+
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block{
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 50px -25px rgba(254, 0, 26, 0.24);
+    border-radius: 20px;
+    padding: 50px;
+    border:  1px solid rgba(254, 0, 26, 0.17);
+}
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1E1E1E;
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title h3{
+	font-weight: 500;
+    font-size: 18px;
+    line-height: 43px;
+    color: #fe001a;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title h3:After {
+    content: "";
+    width: 110px;
+    margin: auto;
+    height: 1px;
+    background: #fe001a;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .form-group{
+    margin-bottom: 24px;
+}
+
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .form-group input{
+    width: 100%;
+    height: 52px;
+    background: #FBFBFB;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .form-group input:focus {
+	border: 1px solid #1E1E1E;
+	outline: none;
+	box-shadow: 0px 15px 20px -15px #fe001a45;
+}
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .form-group input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block button.btn{
+    width: 100%;
+    padding: 15px 0;
+    background: #FE001A;
+	box-shadow: 0px 19px 24px -15px rgba(0, 0, 0, 0.27);
+	border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+	font-weight: 500;
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .terms{
+	text-align: center;
+	color: rgba(0, 0, 0, 0.4);
+}
+.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .terms a{
+	color: #FE001A;
+	text-decoration: none;
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper{
+	position: relative;
+}
+.banner_wrapper .product_wrapper .product_block .img_wrapper img{
+	width: 100%;
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block{
+	position: absolute;
+	top: 100px;
+	right: -30px;
+	height: 175px;
+	width: 175px;
+	background: radial-gradient(71.52% 71.52% at 10% 29.7%, #BAABAC 0%, #FFFFFF 100%);
+	border: 2px solid rgba(255, 255, 255, 0.45);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	animation: bounce 2s ease infinite alternate;
+	-webkit-animation: bounce 2s ease infinite alternate;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+		-moz-transform: translateY(-50px);
+		-ms-transform: translateY(-50px);
+		-o-transform: translateY(-50px);
+}
+	100% {
+		transform: translateY(0);
+	}	
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block::after{
+	content: '';
+	position: absolute;
+	background: #FE001A;
+	box-shadow: 0px 4.23704px 24.363px rgba(0, 0, 0, 0.25);
+	height: 151px;
+	width: 151px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+    left: 11px;
+    top: 11px;
+
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block > div{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block .get{
+	font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block h2{
+	font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block h2 span {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block .cola{
+	font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* BANNER CSS START HERE */
+
+/* INGREDIENTS CSS START HERE */
+.ingredients_wrapper{
+	padding-top: 68px;
+}
+
+.ingredients_wrapper .ingredients_block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ingredients_wrapper .ingredients_block .left_block{
+	flex: 50%;
+	width: 100%;
+}
+
+.ingredients_wrapper .ingredients_block .left_block h2{
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #1E1E1E;
+	margin-bottom: 10px;
+}
+
+.ingredients_wrapper .ingredients_block .left_block h2 span{
+	color: #FE001A;
+}
+
+.ingredients_wrapper .ingredients_block .left_block p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #1E1E1E;
+	max-width: 535px;
+	margin-bottom: 30px;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list h3{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	color: #FE001A;
+	margin-bottom: 28px;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing{
+	display: flex;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing ul:last-child{
+	margin-left: 28px;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #1E1E1E;
+	margin-bottom: 42px;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li:after{
+	content: '';
+	position: absolute;
+	left: 7px;
+    top: 22px;
+	background-image: url('https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/cocacola-minifridge/assets-v5/images/line.svg');
+	background-repeat: no-repeat;
+	width: 1px;
+	height: 68px;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul:last-child li:last-child::after{
+	display: none;
+}
+
+.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li img{
+	margin-right: 14px;
+  margin-top: 7px;
+}
+
+.ingredients_wrapper .ingredients_block .right_block{
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.ingredients_wrapper .ingredients_block .right_block .img_block {
+	line-height: 0;
+}
+
+
+/* INGREDIENTS CSS END HERE */
+
+/* QUANTITY CSS START HERE */
+.quantity_wrapper{
+  background-color: #FE001A;
+}
+
+.quantity_wrapper .quantity_block{
+	display: flex;
+	align-items: center;
+}
+
+.quantity_wrapper .quantity_block .left_block{
+	flex: 50%;
+	text-align: end;
+	position: relative;
+	line-height: 0;
+	padding-top: 68px;
+}
+.quantity_wrapper .quantity_block .left_block .cococola{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+    mix-blend-mode: multiply;
+	z-index: 0;
+}
+
+.quantity_wrapper .quantity_block .left_block .glass-img{
+	z-index: 1;
+	margin-right: 50px;
+}
+
+.quantity_wrapper .quantity_block .right_block{
+	flex: 50%;
+	position: relative;
+	padding-top: 55px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.quantity_wrapper .quantity_block .right_block .coca-text{
+	position: absolute;
+    top: -100px;
+    left: -20px;
+	z-index: 0;
+}
+
+.quantity_wrapper .quantity_block .right_block .block_details{
+	position: relative;
+	z-index: 1;
+}
+
+.quantity_wrapper .quantity_block .right_block .block_details h2{
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #FFFFFF;
+}
+
+.quantity_wrapper .quantity_block .right_block .block_details p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #FFFFFF;
+	max-width: 424px;
+	margin-bottom: 15px;
+} 
+
+.quantity_wrapper .quantity_block .right_block .block_details .condition{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.3;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 35px;
+} 
+.quantity_wrapper .quantity_block .right_block .block_details .content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+.quantity_wrapper .quantity_block .right_block .block_details .content .single_content{
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 30px;
+	max-width: 50%;
+	width: 100%;
+}
+
+
+.quantity_wrapper .quantity_block .right_block .block_details .content .single_content h2{
+	margin-right: 15px;
+}
+
+.quantity_wrapper .quantity_block .right_block .block_details .content .single_content h6{
+	font-style: normal;
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 1.5;
+	color: #FFFFFF;
+}
+
+/* QUANTITY CSS END HERE */
+
+/* PRODUCT CSS START HERE */
+.display_wrapper{
+	padding: 100px 0;
+	position: relative;
+	text-align: center;
+	margin: 0 65px;
+}
+
+.display_wrapper .cola-img img{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	width: 100%;
+} 
+
+.display_wrapper .display_img{
+	max-width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+/* PRODUCT CSS END HERE */
+
+/* STOCK CSS START HERE */
+
+.stock_wrapper{
+	background: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/cocacola-minifridge/assets-v5/images/banner-wave.png), radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+	margin-bottom: 100px;
+	background-position: 0% 85%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.stock_wrapper .shape1, .stock_wrapper .shape2{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	background: #FE001A;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	z-index: 0;
+}
+
+
+.stock_wrapper .shape1{
+	left: 0%;
+	top: 10%;
+}
+
+.stock_wrapper .shape2{
+	right: 5%;
+    bottom: 10%;
+}
+
+.stock_wrapper .stock_block{
+	display: flex;
+}
+
+.stock_wrapper .left_block{
+	width: 100%;
+	flex: 41%;
+}
+
+.stock_wrapper .left_block .detail_block{
+	padding-top: 205px;
+}
+
+.stock_wrapper .left_block .stack{
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 35px;
+	letter-spacing: -0.05em;
+	color: #1E1E1E;
+}
+.stock_wrapper .left_block h2{
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #1E1E1E;
+	margin-bottom: 15px;
+}
+
+.stock_wrapper .left_block h2 span{
+	color: #FE001A;
+}
+
+.stock_wrapper .left_block p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #1E1E1E;
+	max-width: 540px;
+}
+.stock_wrapper .right_block{
+	flex: 59%;
+	text-align: end;
+	width: 100%;
+	margin-right: -305px;
+	line-height: 0;
+	margin-left: -30px;
+}
+
+.stock_wrapper .right_block img{
+	margin-bottom: -84px;
+	/* max-width: 100%; */
+}
+
+/* STOCK CSS END HERE */
+
+/* VARIENTS CSS START HERE */
+.varient_wrapper{
+	padding-top: 100px;
+}
+
+.varient_wrapper .title{
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #1E1E1E;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.varient_wrapper .title span{
+	color: #FE001A;
+}
+
+.varient_wrapper .varient_list{
+	display: flex;
+}
+
+.varient_wrapper .varient_list .single_varient{
+	flex: 33.33%;
+	text-align: center;
+	padding: 40px 0 50px;
+}
+
+.varient_wrapper .varient_list .single_varient:nth-child(1){
+	background: radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+}
+
+.varient_wrapper .varient_list .single_varient h4{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 1.3;
+	text-align: center;
+	letter-spacing: -0.05em;
+	color: #FFFFFF;
+}
+.varient_wrapper .varient_list .single_varient:nth-child(1) h4{
+	color: #1E1E1E;
+}
+.varient_wrapper .varient_list .single_varient:nth-child(2){
+	background: linear-gradient(0deg, #FE001A, #FE001A), radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+}
+
+.varient_wrapper .varient_list .single_varient:nth-child(3){
+	background: linear-gradient(0deg, rgba(30, 30, 30, 0.97), rgba(30, 30, 30, 0.97)), radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+}
+.varient_wrapper .varient_list .single_varient .varient_img{
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.varient_wrapper .varient_list .single_varient:nth-child(1) .varient_img .coke_img,
+.varient_wrapper .varient_list .single_varient:nth-child(2) .varient_img .coke_img{
+	mix-blend-mode: multiply;
+}
+
+.varient_wrapper .varient_list .single_varient:nth-child(3) .varient_img .coke_img{
+	mix-blend-mode: color-dodge;
+}
+
+.varient_wrapper .varient_list .single_varient .varient_img .coke_img{
+	position: absolute;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+} 
+
+.varient_wrapper .varient_list .single_varient .varient_img .can_img{
+	max-width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+/* VARIENTS CSS END HERE */
+
+/* HAPPYNESS CSS START HERE */
+.happyness_wrapper{
+	position: relative;
+	background-image: url(https://cdn.jsdelivr.net/gh/netdevcdn/dev@latest/cocacola-minifridge/assets-v5/images/product-img11.png);
+	background-repeat: no-repeat;
+	height: 730px;
+}
+
+.happyness_wrapper .container{
+	height: 100%;
+}
+.happyness_wrapper .happyness_block{
+	height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.happyness_wrapper .right_block{
+	max-width: 550px;
+	margin-left: auto;
+}
+.happyness_wrapper .right_block .coke{
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #FFFFFF;
+}
+.back_block{
+	display: none;
+}
+
+
+.happyness_wrapper .right_block h2{
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1.3;
+	letter-spacing: -0.05em;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.happyness_wrapper .right_block p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+/* HAPPYNESS CSS END HERE */
+
+/* FOOTER CSS START HERE */
+footer{
+	background: radial-gradient(53.75% 135.06% at 53.75% 46.72%, #F9F9F9 0%, #F9E0E0 100%);
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+footer h4{
+	text-transform: uppercase;
+}
+/* FOOTER CSS END HERE */
+
+@media(max-width: 1600px){
+	.quantity_wrapper .quantity_block .left_block .cococola{
+		max-width: 830px;
+	}
+	.display_wrapper .display_img{
+		max-width: 550px;
+		width: 100%;
+	}
+	.happyness_wrapper{
+		background-size: auto;
+    	background-position: 50% 0%;
+	}
+	.happyness_wrapper .right_block{
+		max-width: 500px;
+	}
+}
+
+@media(max-width: 1399px){
+	.banner_wrapper .product_wrapper .product_block .form_wrapper{
+        max-width: 500px;
+		margin-left: 0px;
+    }
+	.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block{
+		right: -10px;
+		top: 60px;
+	}
+	.ingredients_wrapper .ingredients_block .left_block h2{
+		font-size: 56px;
+	} 
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing ul:last-child{
+		margin-left: 20px;
+	}
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li{
+		font-size: 16px;
+		margin-bottom: 15px;
+	  }
+	
+	  .ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li:after{
+		height: 100%;
+	}
+	.ingredients_wrapper .ingredients_block .right_block .img_block img{
+		max-width: 450px;
+	  }
+	  .quantity_wrapper .quantity_block .left_block .cococola{
+		max-width: 750px;
+	}
+	.quantity_wrapper .quantity_block .left_block .glass-img{
+		max-width: 500px;
+	}
+	.quantity_wrapper .quantity_block .right_block .coca-text{
+		left: -40px;
+		max-width: 700px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details h2{
+		font-size: 56px;
+	  }
+	  .quantity_wrapper .quantity_block .right_block .block_details .content .single_content h6{
+		font-size: 24px;
+	}
+	.display_wrapper{
+		padding: 80px 0;
+	}
+	.display_wrapper .cola-img img{
+		top: 50%;
+		transform: translate(-50% , -50%);
+		-webkit-transform: translate(-50% , -50%);
+		-moz-transform: translate(-50% , -50%);
+		-ms-transform: translate(-50% , -50%);
+		-o-transform: translate(-50% , -50%);
+	}
+	.stock_wrapper .shape1, .stock_wrapper .shape2{
+		display: none;
+	}
+	.stock_wrapper .shape1, .stock_wrapper .shape2{
+		height: 50px;
+		width: 50px;
+	}
+	.stock_wrapper .shape1{
+		left: -10px;
+		top: 5%;
+	}
+	.stock_wrapper .left_block .detail_block{
+		padding-top: 155px;
+	}
+	.stock_wrapper .left_block h2{
+		font-size: 48px;
+	 }
+
+	 .stock_wrapper .right_block{
+		margin-right: -255px;
+	 }
+	 .stock_wrapper .right_block img{
+		margin-bottom: -70px;
+		max-height: 650px;
+	 }
+
+	.varient_wrapper{
+		padding-top: 80px;
+	}
+	.varient_wrapper .title{
+		font-size: 56px;
+	  }
+	  .varient_wrapper .varient_list .single_varient h4{
+		font-size: 30px;
+	}
+	.happyness_wrapper{
+		height: 650px;
+	}
+
+	.happyness_wrapper .right_block h2{
+	  font-size: 56px;
+	}
+}
+@media(min-width: 1200px){
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li:last-child::after{
+		display: none;
+	}
+}
+
+@media(max-width: 1199px){
+	.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block{
+		padding: 30px;
+	}
+	.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label{
+		font-size: 28px;
+	}
+	.ingredients_wrapper .ingredients_block{
+		align-items: end;
+	}
+	.ingredients_wrapper .ingredients_block .left_block h2{
+		font-size: 48px;
+	}
+	.ingredients_wrapper .ingredients_block .right_block .img_block img{
+		max-width: 400px;
+	}
+	.quantity_wrapper .quantity_block .left_block{
+		padding-top: 90px;
+	}
+	.quantity_wrapper .quantity_block .left_block .cococola{
+		max-width: 600px;
+	}
+	.quantity_wrapper .quantity_block .left_block .glass-img{
+		max-width: 400px;
+	}
+	.quantity_wrapper .quantity_block .right_block .coca-text{
+		left: -40px;
+		max-width: 620px;
+		top: -30px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details h2{
+		font-size: 48px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .condition{
+		margin-bottom: 15px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .content .single_content{
+		margin-bottom: 10px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .content .single_content h2{
+		font-size: 42px;
+	}
+	.display_wrapper .display_img{
+		max-width: 500px;
+	}
+	.stock_wrapper .left_block .detail_block{
+		padding-top: 75px;
+	}
+	.stock_wrapper .left_block .stack{
+		font-size: 22px;
+	}
+	.stock_wrapper .left_block h2{
+		font-size: 48px;
+	  }
+	  .stock_wrapper .right_block img{
+		margin-bottom: -58px;
+    	max-height: 540px;
+	}
+	.stock_wrapper .right_block {
+		margin-right: -155px;
+	}
+	.varient_wrapper{
+		padding-top: 60px;
+	}
+	.varient_wrapper .title{
+		font-size: 48px;
+	}
+	.varient_wrapper .varient_list .single_varient h4{
+		font-size: 28px;
+	}
+	.happyness_wrapper .right_block .coke{
+		font-size: 22px;
+	}
+	.happyness_wrapper .right_block{
+		max-width: 400px;
+	}
+	.happyness_wrapper .right_block h2{
+	  font-size: 48px;
+	}
+	
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.banner_wrapper .product_wrapper .product_block .img_wrapper img{
+		max-width: 440px;
+	}
+	.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block{
+		top: -60px;
+	}
+	.banner_wrapper .product_wrapper .product_block .form_wrapper{
+		max-width: 460px;
+	}
+}
+@media(max-width: 991px){
+	.happyness_wrapper .right_block h2{
+	  font-size: 40px;
+	}
+	.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block::after{
+		height: 141px;
+		width: 141px;
+		left: 5px;
+    	top: 5px;
+	}
+	.banner_wrapper .product_wrapper .product_block .img_wrapper .price_block{
+		height: 155px;
+		width: 155px;
+	}
+
+	.banner_wrapper .product_wrapper .product_block{
+		display: block;
+	}
+	.banner_wrapper .product_wrapper .product_block .form_wrapper{
+		margin: 0 auto;
+	}
+
+	.banner_wrapper .product_wrapper .product_block .img_wrapper{
+		max-width: 50%;
+		width: 100%;
+		margin: 0 auto 30px;
+	}
+
+	.ingredients_wrapper .ingredients_block .left_block h2{
+		font-size: 40px;
+	  }
+
+	  .ingredients_wrapper .ingredients_block .right_block .img_block img{
+		max-width: 350px;
+	  }
+
+	  .quantity_wrapper .quantity_block .left_block{
+		padding-top: 60px;
+	}
+	.quantity_wrapper .quantity_block .left_block .cococola{
+		max-width: 520px;
+	}
+
+	.quantity_wrapper .quantity_block .left_block .glass-img{
+		max-width: 350px;
+		margin-right: 0;
+	}
+
+	.quantity_wrapper .quantity_block .right_block .coca-text{
+		max-width: 530px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details h2{
+		font-size: 40px;
+	  }
+
+	  .quantity_wrapper .quantity_block .right_block .block_details .content .single_content h2{
+		font-size: 36px;
+	}
+
+	.display_wrapper{
+		padding: 50px 0;
+		margin: 0 25px;
+	}
+	.stock_wrapper .stock_block{
+		flex-direction: column;
+	}
+	.stock_wrapper .left_block .detail_block{
+		padding-top: 50px;
+	}
+	.stock_wrapper .left_block h2{
+		font-size: 40px;
+	  }
+	  .stock_wrapper .right_block{
+		margin-right: 0;
+		margin-left: 30px;
+	}
+	.stock_wrapper .right_block img{
+		margin-bottom: -53px;
+    	max-height: 490px;
+	}
+	.display_wrapper .display_img{
+		max-width: 450px;
+	}
+	.varient_wrapper{
+		padding-top: 50px;
+	}
+
+	.varient_wrapper .title{
+		font-size: 40px;
+	  }
+
+	  .varient_wrapper .varient_list .single_varient h4{
+		font-size: 22px;
+	}
+	.happyness_wrapper{
+		height: 600px;
+	}
+}  
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing{
+		display: block;
+	}
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing ul:last-child{
+		margin-left: 0;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .content .single_content{
+		max-width: 100%;
+	}
+	.varient_wrapper .varient_list .single_varient .varient_img .can_img{
+		max-width: 200px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list ul li:last-child::after{
+		display: none;
+	}
+}
+@media(max-width: 767px){
+
+	.banner_wrapper .product_wrapper .product_block .img_wrapper{
+		max-width: 450px;
+		width: 100%;
+	}
+	.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .form-group{
+        margin-bottom: 15px;
+    }
+	.ingredients_wrapper .ingredients_block{
+		display: block;
+	  }
+	  
+	  .ingredients_wrapper .ingredients_block .left_block h2{
+		font-size: 32px;
+	  }
+
+	  .ingredients_wrapper .ingredients_block .right_block{
+		margin-top: 40px;
+	}
+
+	.quantity_wrapper .quantity_block{
+		flex-direction: column-reverse;	
+	}
+	.quantity_wrapper .quantity_block .left_block{
+		text-align: center;
+		width: 100%;
+		padding-top: 30px;
+	}
+
+	.quantity_wrapper .quantity_block .right_block .block_details h2{
+		font-size: 32px;
+	  }
+
+	  .quantity_wrapper .quantity_block .right_block .block_details .content .single_content h6{
+		font-size: 20px;
+	}
+
+	.display_wrapper .display_img{
+		max-width: 400px;
+	}
+
+	.stock_wrapper .left_block h2{
+		font-size: 32px;
+	  }
+
+
+	  .stock_wrapper .right_block img{
+		margin-bottom: -48px;
+		max-width: 100%;
+	}
+
+
+	.varient_wrapper .title{
+		font-size: 32px;
+	  }
+
+	  .varient_wrapper .varient_list .single_varient{
+		flex: 100%;
+	}
+
+	.varient_wrapper .varient_list {
+		display: block;
+	}
+
+	.happyness_wrapper .right_block .coke{
+		font-size: 18px;
+	}
+
+	.happyness_wrapper .right_block h2{
+	  font-size: 32px;
+	}
+	.back_block{
+		display: block;
+		min-height: 260px;
+		line-height: 0;
+	}
+	.back_block img{
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		min-height: 260px;
+	}
+	.happyness_wrapper{
+		height: auto;
+		background: transparent;
+		position: relative;
+	}
+	.happyness_wrapper::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #0000005e;
+		z-index: 2;
+	}
+	.happyness_wrapper  .happyness_block{
+		z-index: 3;
+		position: absolute;
+		top: 50%;
+		transform: translate(0%,-50%);
+		max-width: 100%;
+		width: 100%;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.happyness_wrapper .right_block{
+		max-width: 100%;
+		padding:30px 15px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 575px){
+	.banner_wrapper .product_wrapper .product_block .form_wrapper{
+        padding: 0 0px;
+    }
+	.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block{
+        padding: 20px;
+    }
+	.banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label{
+        font-size: 22px;
+    }
+	.display_wrapper .cola-img img{
+		top: 10%;
+		transform: translateX(-50% );
+	}
+	.stock_wrapper .right_block img{
+		margin-bottom: -42px;
+	}
+	.varient_wrapper .varient_list .single_varient .varient_img .can_img{
+		max-width: 250px;
+	}
+}
+
+@media(max-width: 480px){
+	.ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing{
+		display: block;
+	  }
+	  .ingredients_wrapper .ingredients_block .left_block .ingredients_list .listing ul:last-child{
+		margin-left: 0;
+	  }
+	  .quantity_wrapper .quantity_block .left_block .glass-img{
+		max-width: 280px;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .content{
+		display: block;
+	}
+	.quantity_wrapper .quantity_block .right_block .block_details .content .single_content{
+		max-width: 100%;
+	}
+	.stock_wrapper .right_block img{
+		margin-bottom: -30px;
+	}
+}
